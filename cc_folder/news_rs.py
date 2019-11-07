@@ -6,19 +6,20 @@ import sys
 
 
 
-BASE_DIR='/home/optimass/scratch/OnExposureBias/word'
+BASE_DIR='base_dir'
 
 runs = 50
 
 for _ in range(runs):
 
     ## MLE or GAN
-    # for now just MLE
+    # for now just CoT
     loss = ['mle','gan', 'cot']
     p = [.0, 0, 1.0]
     loss = np.random.choice(loss, 1, p=p)[0]
 
     ## layers
+    # for now, just one layer 
     num_layers = [1,2]
     p = [1, 0]
     num_layers = np.random.choice(num_layers, 1, p=p)[0]
@@ -27,8 +28,7 @@ for _ in range(runs):
     hd = [128, 256, 512]
     p = [0.2, 0.3, 0.5]
     hd  = np.random.choice(hd, 1, p=p)[0]
-    hdg = hd
-    hdd = hd   
+    hdg = hd  
  
     ## batch_size
     bs = [64, 128, 256, 512, 1024]
