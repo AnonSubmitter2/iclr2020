@@ -6,7 +6,7 @@ import sys
 
 
 
-BASE_DIR='/home/optimass/scratch/GansFallingShort'
+BASE_DIR='base_dir'
 LOAD_GEN_PATH = 'trained_models/news/word/best_mle'
 
 runs = 1
