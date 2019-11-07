@@ -5,8 +5,8 @@ import time
 import sys
 
 
-BASE_DIR='/home/optimass/scratch/GansFallingShort/best_mle'
-#BASE_DIR='/home/optimass/GansFallingShort/real_data_experiments/trained_models/news/word/best_mle'
+BASE_DIR='../real_data_experiments/trained_models/news/word/best_mle'
+
 
 DECODERS=['temp', 'beam', 'topk', 'weighted_topk','gen_ll']
 DECODERS=['disc_ll']
