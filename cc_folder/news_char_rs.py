@@ -6,7 +6,7 @@ import sys
 
 
 
-BASE_DIR='/home/optimass/scratch/OnExposureBias/char/'
+BASE_DIR='base_dir/'
 
 runs = 40
 
